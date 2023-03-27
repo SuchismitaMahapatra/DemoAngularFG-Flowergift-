@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-sm navbar-light" [ngClass]="themecolor">
+  <a class="navbar-brand bg-purple" href="#">{{title}}</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <strong>
+    <div class="navbar-nav">
+     <a class="nav-link  text-bg-info" routerLinkActive="active" [routerLink]="['/home']">Home</a>&nbsp;
+     &nbsp;<a class="nav-item " routerLinkActive="active" [routerLink]="['/products']">Product</a>&nbsp;
+     &nbsp;<a class="nav-item " routerLinkActive="active"   [routerLink]="['/about']">AboutUs</a>&nbsp;
+     <div>
+      <button type="button"class="btn btn-warning" (click)="toggletheme()">Click And See the Magic</button>
+      </div>
+      <!--Add to cart-->
+      <div class="navbar-nav">
+        <button class="nav-link bg-light position-absolute top-0 end-0" (click)="getcartCount()">
+          <i class="bi bi-minecart">
+          <span class="badge text-bg-info">{{cartCount}}</span>
+        </i>
+      </button>
+      </div>
+       </div>
+  </strong>
+  </div>
+</nav>
+<i>Want to Know about today date Click On this button</i><button type="button" class="btn btn-danger" (click)="datefunction()">Todaydate</button>
+
+<router-outlet></router-outlet>

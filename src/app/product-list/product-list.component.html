@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col">
+    <div class="mb-2">
+     <input type="text" class="form-control" [(ngModel)]="filter">
+    </div>
+    <div class="mb-3">
+       Showing results for:--{{filter}}
+    </div>
+  </div>
+<div class="row row-cols-4 ">
+<div *ngFor="let product of filtered" class="col">
+  <div class="card m-2" >
+    <!--Property Binding using Image [] = variable name-
+    <img [src]="product.image" class="card-img-top" [alt]="product.name" [style.width.px]="300" [style.height.px]="300">-->
+   <img [src]="product.image"  id="image1" class="card-img-top" [alt]="product.name" [ngStyle]="imgstyle">
+    <div class="card-body">
+      <h5 class="card-title">{{product.id}}</h5>
+      <b>{{product.name | uppercase}}</b>
+      <h3>{{product.price | currency : 'INR' :'symbol' :'1.0-2'}}</h3>
+      <p class="card-text" [title]="product.description">-</p>
+      <p>{{product.code | convert | uppercase}}</p>
+      <a href="#" class="btn btn-primary" (click)="addtocart($event,product)">AddtoCart</a>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+
+
+

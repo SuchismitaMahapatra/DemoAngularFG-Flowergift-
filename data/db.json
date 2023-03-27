@@ -1,0 +1,66 @@
+{
+  "products":[{
+      "image":"assets/images/15-red-roses-arrangement_1.webp",
+      "id":1,
+      "name":"Roses",
+      "price":200.897,
+      "code":"R1231",
+      "description":"Roses are considered as symbol of love,respect,expression"
+    },
+    {
+      "image":"assets/images/gleamingloveorchidsbouquet.webp",
+      "id":2,
+      "name":"Orchids",
+      "price":400.98754,
+      "code":"1111",
+      "description":"Orchids are also believed to bring good luck and prosperity. "
+        },
+     {
+      "image":"assets/images/p-purple-orchids-pink-roses-in-round-vase-139337-m.jpg",
+      "id":3,
+      "name":"PinkOrchids",
+      "price":500.953764,
+      "code":"P674Y1",
+      "description":"orchid was considered a symbol of wealth by royalty."
+    },
+    {
+      "image":"assets/images/Bambooplant.webp",
+      "id":4,
+      "name":"BambooPlant",
+      "price":1000,
+      "code":"BPlant675",
+      "description":"used to coll the room"
+     },
+     {
+     "image":"assets/images/p-grow-together-jade-mini-plant-171312-m.webp",
+     "id":5,
+     "name":"JadePlant",
+     "price":1000,
+     "code":"JPLA-1",
+     "description":"used to coll the room"}
+    ,{
+      "image":"assets/images/pineapple-cake-half-kg_2.webp",
+      "id":6,
+      "name":"Cake",
+      "price":550,
+      "code":"CAK-1",
+      "description":"Pineapple Cake(Made with fresh pineapple,cream)"
+    },
+   {
+    "image":"assets/images/holy-tulsi-plant_1.webp",
+    "id":"7",
+    "name":"TulsiPlant",
+    "price":100,
+    "code":"TLP-1",
+    "description":"Holy tulsi plant brings good luck"
+  },
+  {
+    "image":"assets/images/ring.webp",
+    "id":8,
+    "name":"Ring",
+    "price":500,
+    "code":"ACCESS-1",
+    "description":"Unique,stylish,design made for you"
+  }
+  ]
+}
